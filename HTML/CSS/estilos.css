@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "Dancing Script";
+  src: url("Dancing Script.ttf");
+}
+html{
+  animation: slidein 1s;
+}
+@-webkit-keyframes slidein {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+   margin-top: 0%;
+  }
+}
+html{
+  background-color: #02010a;
+}
+#cabecera{
+  background-color:  #5b7989;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: left;
+  text-shadow: 2px 2px #02010a;
+  font-family: "Dancing Script";
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+header{
+  display: block;
+  width:90%;
+  margin: auto;
+}
+.Titulo, .Menu{
+margin: auto;
+}
+.Menu a{
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  margin-left: 10px;
+}
+#inicio{
+  text-decoration: none;
+}
+.Paisaje1,figure,img{
+  width: 90%;
+  margin-top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Paisaje1 {
+  box-sizing: border-box;
+  padding: 10px;
+  background-color:  #82c3a6;
+}
+.Paisaje2_3{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row - wrap;
+  margin:0 auto;
+  padding-top: 10px;
+  background-color: #d5c75f;
+  border: 1px solid;
+}
+#Paisaje2 img{
+  border: 2px solid;
+  transition-property:transform: rotate(),filter: drop-shadow();
+  transition-duration: 0.5s;
+}
+#Paisaje2 img:hover{
+transform: rotate(10deg);
+-webkit-filter:drop-shadow(5px 5px 5px #82c3a6);
+filter: drop-shadow(5px 5px 5px #82c3a6);
+}
+#Paisaje3 img{
+  border: 2px solid;
+  transition-property:transform:translate(),filter: drop-shadow();
+  transition-duration: 0.5s;
+}
+#Paisaje3 img:hover{
+  transform: translate(20px,-5px);
+  -webkit-filter:drop-shadow(5px 5px 5px #82c3a6);
+  filter: drop-shadow(5px 5px 5px #82c3a6);
+}
+
+.Paisaje2_3 a{
+  padding-bottom: 10px;
+  font-family: "Dancing Script";
+  color: black;
+  font-size: 25px;
+}
+figure{
+  text-align: center;
+
+}
+#contenido img{
+  -webkit-filter:drop-shadow(5px 5px 5px #02010a);
+  filter: drop-shadow(5px 5px 5px #02010a);
+}
+#contenido{
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+@media (max-width:900px) {
+  #contenido{
+    width: 100%;
+  }
+  #cabecera{
+    display: inline;
+    text-align: center;
+    margin:0 auto;
+  }
+  .Menu{
+    margin-bottom: 20px;
+  }
+  .Paisaje2_3{
+    display: flex;
+    flex-direction: column;
+  }
+  #Info .Pie_de_pagina{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left:0px;
+    padding-left: 0px;
+    float: left;
+  }
+}
+#Info{
+  background-color: #C6d5c5;
+  width: 90%;
+  margin: auto;
+  display: block;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.Pie_de_pagina{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  font-family: "Dancing Script";
+}
+.Pie_de_pagina div{
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
